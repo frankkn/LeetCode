@@ -4,7 +4,7 @@ public:
     bool isScramble(string s1, string s2) {
         if(s1 == s2)    return true;
 
-        string key = s1 + " " + s2;
+        string key = s1 + s2;
         if(mp.find(key) != mp.end())    return mp[key]; 
 
         int n = s1.size();
